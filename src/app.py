@@ -3,8 +3,8 @@ from src.users.admin import Admin
 from src.users.receptionist import Receptionist
 from src.users.doctor import Doctor
 from src.users.patient import Patient
-from src.shared.update_account import update_account, renew_password, view_account
-from src.shared.check_existing_patient import check_existing_patients
+from src.controllers.update_account import update_account, renew_password, view_account
+from src.controllers.check_existing_patient import check_existing_patients
 
 
 def main():

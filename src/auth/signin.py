@@ -1,5 +1,5 @@
 import json
-from src.shared.generate_hash import generate_hash_password
+from src.controllers.generate_hash import generate_hash_password
 
 
 class SignIn:

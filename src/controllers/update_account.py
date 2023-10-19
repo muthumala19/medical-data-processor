@@ -1,5 +1,5 @@
 import json
-from src.shared.generate_hash import generate_hash_password, encode, decode
+from src.controllers.generate_hash import generate_hash_password, encode, decode
 
 def update_account(user_id):
     new_name = input('Enter new name: ')

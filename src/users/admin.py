@@ -1,5 +1,5 @@
 import json
-from src.shared.generate_hash import generate_hash_password, encode
+from src.controllers.generate_hash import generate_hash_password, encode
 def create_admin():
     name = input('Admin username: ')
     temp_password = generate_hash_password(input('Temporary password: '))

@@ -1,5 +1,5 @@
 import json
-from src.shared.generate_hash import generate_hash_password, encode
+from src.controllers.generate_hash import generate_hash_password, encode
 class Receptionist:
     @staticmethod
     def create_account(user_type, privilege_level):

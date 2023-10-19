@@ -1,5 +1,5 @@
 import json
-from src.shared.generate_hash import *
+from src.controllers.generate_hash import *
 
 class SignUp:
     roles = {'1': "doctor", '2': "receptionist"}
