@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "200405B",
+      "password": "c10b1015f0d6e4e77d6e8ac859bfa9da",
+      "user_type": "admin",
+      "privilege_level": "1"
+    },
+    {
+      "id": 2,
+      "name": "muthumala",
+      "password": "5574a5e8899c2a20b15dc44cabf9b162",
+      "user_type": "doctor",
+      "privilege_level": "2"
+    },
+    {
+      "id": 3,
+      "name": "pasindu",
+      "password": "23069cc91e61567f15e3a33f31de21e7",
+      "user_type": "receptionist",
+      "privilege_level": "3"
+    },
+    {
+      "id": 4,
+      "name": "pasindu_muthumala",
+      "password": "c10b1015f0d6e4e77d6e8ac859bfa9da",
+      "user_type": "patient",
+      "privilege_level": "4"
+    },
+    {
+      "id": 5,
+      "name": "muthumala19",
+      "password": "e35a184d0373b6485375ec69a4d0239e",
+      "user_type": "doctor",
+      "privilege_level": "2"
+    },
+    {
+      "id": 6,
+      "name": "muthumala19",
+      "password": "f69b9f85da5dfe6629cd0ce35e110b16",
+      "user_type": "doctor",
+      "privilege_level": "2"
+    }
+  ],
+  "codes": {
+    "doctor": "d8578edf8458ce06fbc5bb76a58c5ca4",
+    "receptionist": "e10adc3949ba59abbe56e057f20f883e"
+  }
+}

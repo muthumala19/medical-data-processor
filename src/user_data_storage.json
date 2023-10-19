@@ -1,0 +1,112 @@
+{
+  "personal_details": [
+    {
+      "id": 1,
+      "name": "Pasindu Muthumala",
+      "age": "23",
+      "nic_no": "OTc2NDUzMzc5==",
+      "tel": "MDcxMjIyNjQ2OQ=="
+    },
+    {
+      "id": 2,
+      "name": "Krishan Muthumala",
+      "age": "27",
+      "nic_no": "OTg2NDUzMzc5dg==",
+      "tel": "MDc4MjQ2NTk2Mw=="
+    },
+    {
+      "id": 3,
+      "name": "Apsara Dilani",
+      "age": "50",
+      "nic_no": "OTc2NTMxMTk2dg==",
+      "tel": "MDc5MjM1MTg0Mw=="
+    },
+    {
+      "id": 4,
+      "name": "Jayantha Muthumala",
+      "age": "54",
+      "nic_no": "OTQwMjUzMzk1dg==",
+      "tel": "MDcxMjk0ODU2OQ=="
+    },
+    {
+      "id": 5,
+      "name": "Pasindu Muthumala",
+      "age": "23",
+      "nic_no": "MjAwMDA0ODAwMzE4",
+      "tel": "Kzk0NzAyODY4ODcy"
+    },
+    {
+      "id": 6,
+      "name": "Pasindu Muthumala",
+      "age": "23",
+      "nic_no": "MjAwMDA0ODAwMzE4",
+      "tel": "MDcwMjg2ODg3Mg=="
+    }
+  ],
+  "sickness_details": [
+    {
+      "id": "4",
+      "sickness": "fever, cough, head ache",
+      "date": "2020-05-01 22:26:53"
+    },
+    {
+      "id": "4",
+      "sickness": "yellow fever",
+      "date": "2020-05-01 22:29:18"
+    },
+    {
+      "id": "4",
+      "sickness": "very sick",
+      "date": "2020-05-01 22:49:19"
+    },
+    {
+      "id": "4",
+      "sickness": "Very sick",
+      "date": "2020-05-02 01:30:45"
+    },
+    {
+      "id": "4",
+      "sickness": "cough",
+      "date": "2020-05-02 01:36:03"
+    },
+    {
+      "id": "4",
+      "sickness": "Sick as can be",
+      "date": "2020-05-02 19:44:12"
+    }
+  ],
+  "drug_presc": [
+    {
+      "id": "4",
+      "drug_presc": "give 2 ml of methanol with hydrochloric acid daily",
+      "date": "2020-05-01 22:41:02"
+    },
+    {
+      "id": "4",
+      "drug_presc": "2ml soframycin",
+      "date": "2020-05-01 22:48:24"
+    }
+  ],
+  "labtest_presc": [
+    {
+      "id": "4",
+      "labtest_presc": "has corona virus",
+      "date": "2020-05-01 22:42:28"
+    },
+    {
+      "id": "4",
+      "labtest_presc": "hey you're sick",
+      "date": "2020-05-01 22:49:06"
+    },
+    {
+      "id": "4",
+      "labtest_presc": "Dengue positive",
+      "date": "2020-05-02 11:12:35"
+    },
+    {
+      "id": "4",
+      "labtest_presc": "Bad",
+      "date": "2020-05-02 13:44:44"
+    }
+  ]
+}
