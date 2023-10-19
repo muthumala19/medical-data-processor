@@ -1,9 +1,6 @@
 import json
 from src.controllers.generate_hash import generate_hash_password
-
-
 class SignIn:
-
     @staticmethod
     def authenticate():
         name = input("Enter username: ")
@@ -19,7 +16,6 @@ class SignIn:
         else:
             print("Sign in failed")
             return False
-
     @staticmethod
     def find_user(users, username, password):
         for user in users:

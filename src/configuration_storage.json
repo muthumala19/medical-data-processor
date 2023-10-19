@@ -1,9 +1,9 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "200405B",
-      "password": "c10b1015f0d6e4e77d6e8ac859bfa9da",
+      "id": 8,
+      "name": "Muthumala19",
+      "password": "77eb3e65c33ef421296590613d564b86",
       "user_type": "admin",
       "privilege_level": "1"
     },
@@ -41,10 +41,24 @@
       "password": "f69b9f85da5dfe6629cd0ce35e110b16",
       "user_type": "doctor",
       "privilege_level": "2"
+    },
+    {
+      "id": 7,
+      "name": "muthumala",
+      "password": "81572c39d202e0cfabb6e61db9dbbb21",
+      "user_type": "doctor",
+      "privilege_level": "2"
+    },
+    {
+      "id": 8,
+      "name": "pasindu",
+      "password": "8e349f0adb30180d35353b395333cec8",
+      "user_type": "receptionist",
+      "privilege_level": "3"
     }
   ],
   "codes": {
-    "doctor": "d8578edf8458ce06fbc5bb76a58c5ca4",
-    "receptionist": "e10adc3949ba59abbe56e057f20f883e"
+    "doctor": "366e88f8a07b24d59182ab63f0ba5d71",
+    "receptionist": "4de72f6b35f6c89aeee4c517b15c88d1"
   }
 }

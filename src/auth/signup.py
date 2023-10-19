@@ -1,9 +1,7 @@
 import json
 from src.controllers.generate_hash import *
-
 class SignUp:
     roles = {'1': "doctor", '2': "receptionist"}
-
     def create_account(self):
         name = input('Username:')
         password = input('Enter a password including an upper-case letter, lower-case letter, a digit and length not '
@@ -24,7 +22,6 @@ class SignUp:
 
         # hotel staff accounts can only be created by using the relevant code for security
         while True:
-
             role_number = input('Press 1 for "doctor account" or 2 for "receptionist account": ')
 
             if role_number == '1':
@@ -35,7 +32,6 @@ class SignUp:
                     break
                 else:
                     print("Invalid code")
-
             elif role_number == '2':
                 code = generate_hash_password(input("Please enter the receptionist code to create account: "))
                 if code == rec_code:
@@ -46,7 +42,6 @@ class SignUp:
                     print("Invalid code")
             else:
                 print("Invalid input. Try again")
-
         # read and write user to config file
         with open("configuration_storage.json", 'r') as json_data_file:
             data = json.load(json_data_file)
@@ -60,16 +55,13 @@ class SignUp:
             })
         with open("configuration_storage.json", 'w') as outfile:
             json.dump(data, outfile)
-
         print("Account created successfully")
-
         # fill account details
         print("Fill in personal account details")
         acc_name = input('Your name: ')
         age = input('Age: ')
         nic_no = input('NIC number: ')
         tel = input('Telephone number: ')
-
         # write account details to data file
         with open("user_data_storage.json", 'r') as json_data_file:
             data = json.load(json_data_file)
