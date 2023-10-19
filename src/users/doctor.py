@@ -1,12 +1,13 @@
 import json
 from datetime import datetime
 
+
 class Doctor:
     @staticmethod
     def update_details(patient_id, data_key, message):
         details = input(f"Enter {message}: \n")
 
-        with open("data.json", 'r') as json_data_file:
+        with open("user_data_storage.json", 'r') as json_data_file:
             data = json.load(json_data_file)
             data[data_key].append({
                 'id': patient_id,
@@ -14,14 +15,14 @@ class Doctor:
                 'date': str(datetime.now())[:19],
             })
 
-        with open("data.json", 'w') as outfile:
+        with open("user_data_storage.json", 'w') as outfile:
             json.dump(data, outfile)
 
         print(f"{message} added")
 
     @staticmethod
     def display_details(patient_id, data_key, detail_name):
-        with open("data.json", 'r') as json_data_file:
+        with open("user_data_storage.json", 'r') as json_data_file:
             data = json.load(json_data_file)
             details = data[data_key]
 
@@ -52,4 +53,3 @@ class Doctor:
     @staticmethod
     def display_labtest_prescription(patient_id):
         Doctor.display_details(patient_id, 'labtest_presc', 'labtest_presc')
-

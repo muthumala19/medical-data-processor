@@ -3,11 +3,11 @@ from src.shared.generate_hash import generate_hash_password, encode, decode
 
 def update_account(user_id):
     new_name = input('Enter new name: ')
-    new_age = input('Enter new age: ')
     new_tel = input('Enter new telephone number: ')
+    new_age = input('Enter new age: ')
 
     # Read and write new account details to data file
-    with open("data.json", 'r') as data_file:
+    with open("user_data_storage.json", 'r') as data_file:
         f_data = json.load(data_file)
         details = f_data['personal_details']
         for detail in details:
@@ -16,15 +16,15 @@ def update_account(user_id):
                 detail['age'] = new_age
                 detail['tel'] = encode(new_tel)
 
-    with open("data.json", 'w') as f_outfile:
+    with open("user_data_storage.json", 'w') as f_outfile:
         json.dump(f_data, f_outfile)
 
-    print("Account updated successfully")
+    print("Account update is successful")
 
 
 def view_account(user_id):
     # Read account details from data file
-    with open("data.json", 'r') as data_file:
+    with open("user_data_storage.json", 'r') as data_file:
         f_data = json.load(data_file)
         details = f_data['personal_details']
         for detail in details:
@@ -47,14 +47,14 @@ def renew_password(user_id):
 
     new_password = generate_hash_password(new_pwd)
 
-    with open("config.json", 'r') as data_file:
+    with open("configuration_storage.json", 'r') as data_file:
         f_data = json.load(data_file)
         account = f_data['users']
         for user in account:
             if user_id == str(user['id']):
                 user['password'] = new_password
 
-    with open("config.json", 'w') as f_outfile:
+    with open("configuration_storage.json", 'w') as f_outfile:
         json.dump(f_data, f_outfile)
 
-    print("Password changed successfully")
+    print("Password updated successfully")

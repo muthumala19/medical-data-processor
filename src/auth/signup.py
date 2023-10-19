@@ -1,7 +1,6 @@
 import json
 from src.shared.generate_hash import *
 
-
 class SignUp:
     roles = {'1': "doctor", '2': "receptionist"}
 
@@ -18,7 +17,7 @@ class SignUp:
         safe_password = generate_hash_password(password)
 
         # read config file for doctor and receptionist codes
-        with open("config.json", 'r') as json_data_file:
+        with open("configuration_storage.json", 'r') as json_data_file:
             data = json.load(json_data_file)
             doc_code = data['codes'].get('doctor')
             rec_code = data['codes'].get('receptionist')
@@ -49,7 +48,7 @@ class SignUp:
                 print("Invalid input. Try again")
 
         # read and write user to config file
-        with open("config.json", 'r') as json_data_file:
+        with open("configuration_storage.json", 'r') as json_data_file:
             data = json.load(json_data_file)
             user_id = len(data['users']) + 1
             data['users'].append({
@@ -59,7 +58,7 @@ class SignUp:
                 'user_type': user_type,
                 'privilege_level': privilege_level
             })
-        with open("config.json", 'w') as outfile:
+        with open("configuration_storage.json", 'w') as outfile:
             json.dump(data, outfile)
 
         print("Account created successfully")
@@ -72,7 +71,7 @@ class SignUp:
         tel = input('Telephone number: ')
 
         # write account details to data file
-        with open("data.json", 'r') as json_data_file:
+        with open("user_data_storage.json", 'r') as json_data_file:
             data = json.load(json_data_file)
             data['personal_details'].append({
                 'id': user_id,
@@ -81,6 +80,6 @@ class SignUp:
                 'nic_no': encode(nic_no),
                 'tel': encode(tel)
             })
-        with open("data.json", 'w') as outfile:
+        with open("user_data_storage.json", 'w') as outfile:
             json.dump(data, outfile)
         print("Account completed")

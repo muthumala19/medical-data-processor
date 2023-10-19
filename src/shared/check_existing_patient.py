@@ -1,6 +1,6 @@
 import json
 def check_existing_patients(id):
-    with open("config.json", 'r') as file:
+    with open("configuration_storage.json", 'r') as file:
         data = json.load(file)
         patients = data['users']
         for patient in patients:

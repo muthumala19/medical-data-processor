@@ -9,7 +9,7 @@ class SignIn:
         name = input("Enter username: ")
         hashed_password = generate_hash_password(input("Enter password: "))
 
-        with open("config.json", 'r') as json_data_file:
+        with open("configuration_storage.json", 'r') as json_data_file:
             data = json.load(json_data_file)
             current_user = SignIn.find_user(data['users'], name, hashed_password)
 
